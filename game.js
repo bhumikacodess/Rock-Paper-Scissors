@@ -3,7 +3,9 @@
         Losses:0,
         Tie:0
     };
-    
+
+    updateScore();
+
     function pickComputerMove(){
         let computerMove = '';
         let randomNumber = Math.random();
