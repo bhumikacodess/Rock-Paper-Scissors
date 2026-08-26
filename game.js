@@ -72,8 +72,6 @@
         document.querySelector('.display-result').innerHTML = `${result}`;
 
        
-
-
         
 
     }
@@ -81,6 +79,21 @@
         document.querySelector('.show-score').innerHTML = `Wins: ${score.Wins}  Losses: ${score.Losses}  Tie: ${score.Tie}`;
         }
 
-        document
+    let isAutoPlay = false;
+    let intervalId ;
+
+    function autoPlay(){
+        If(!isAutoPlay){
+        intervalId = setInterval (() =>{
+            const playerMove = pickComputerMove();
+            playGame(playerMove);
+            isAutoPlay = true;
+        },1000);
+        } else {
+            clearInterval(intervalId);
+            isAutoPlay = false;
+
+        }
+        }
     
    
