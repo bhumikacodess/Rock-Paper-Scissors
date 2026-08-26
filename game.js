@@ -28,10 +28,11 @@
             playGame(playerMove);
         },1000);
             isAutoPlay = true;
+            document.querySelector('.auto-play-button').innerHTML = 'Stop Auto Play';
         } else {
             clearInterval(intervalId);
             isAutoPlay = false;
-
+            document.querySelector('.auto-play-button').innerHTML = 'Auto Play';
         }
     }
     
