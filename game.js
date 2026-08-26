@@ -26,8 +26,8 @@
         intervalId = setInterval (() =>{
             const playerMove = pickComputerMove();
             playGame(playerMove);
-            isAutoPlay = true;
         },1000);
+            isAutoPlay = true;
         } else {
             clearInterval(intervalId);
             isAutoPlay = false;
