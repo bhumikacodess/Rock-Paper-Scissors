@@ -42,15 +42,18 @@
 
     document.querySelector('.rock-btn').addEventListener('click',()=>{
         playGame('rock');
+    }
  );
 
    document.querySelector('.paper-btn').addEventListener('click',()=>{
         playGame('paper');
+   }
  );
 
 
-    document.querySelector('.scissor-btn').addEventListener('click',()=>{
+    document.querySelector('.scissors-btn').addEventListener('click',()=>{
         playGame('scissors');
+    }
  );
     
 
