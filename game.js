@@ -56,6 +56,16 @@
     }
  );
 
+    document.querySelector('.reset-button').addEventListener('click',()=>{
+        resetScore();
+}
+);
+
+    document.querySelector('.auto-play-button').addEventListener('click',()=>{
+        autoplay();
+    }
+ );
+
 
     document.body.addEventListener('keydown',(event)=>{
         if(event.key === 'r'){
@@ -134,7 +144,16 @@
         document.querySelector('.show-score').innerHTML = `Wins: ${score.Wins}  Losses: ${score.Losses}  Tie: ${score.Tie}`;
         }
 
-   
+    function resetScore(){
+         score ={
+        Wins: 0,
+        Losses:0,
+        Tie:0
+    };
+  
+        localStorage.removeItem('score');
+          updateScore();
+    }
         
     
    
