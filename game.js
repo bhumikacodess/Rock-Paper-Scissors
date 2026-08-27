@@ -37,6 +37,24 @@
             document.querySelector('.auto-play-button').innerHTML = 'Auto Play';
         }
     }
+
+
+
+    document.querySelector('.rock-btn').addEventListener('click',()=>{
+        playGame('rock');
+ );
+
+   document.querySelector('.paper-btn').addEventListener('click',()=>{
+        playGame('paper');
+ );
+
+
+    document.querySelector('.scissor-btn').addEventListener('click',()=>{
+        playGame('scissors');
+ );
+    
+
+
     
     function playGame(playerMove){
         let computerMove = pickComputerMove();
