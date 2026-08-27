@@ -62,7 +62,7 @@
 );
 
     document.querySelector('.auto-play-button').addEventListener('click',()=>{
-        autoplay();
+        autoPlay();
     }
  );
 
@@ -75,7 +75,9 @@
         }else  if(event.key === 's'){
             playGame('scissors');
         }else if(event.key === 'a'){
-            autoplay();
+            autoPlay();
+        }else if(event.key === 'Backspace'){
+            resetScore();
         }
     });
         
