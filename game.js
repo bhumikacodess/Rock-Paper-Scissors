@@ -57,7 +57,7 @@
  );
 
     document.querySelector('.reset-button').addEventListener('click',()=>{
-        resetScore();
+        showResetConfirmation();
 }
 );
 
@@ -77,7 +77,7 @@
         }else if(event.key === 'a'){
             autoPlay();
         }else if(event.key === 'Backspace'){
-            resetScore();
+            showResetConfirmation();
         }
     });
         
@@ -157,5 +157,31 @@
           updateScore();
     }
         
+    function showResetConfirmation(){
+        document.querySelector('.reset-confirmation').innerHTML = `
+        Are you sure you want to reset score?
+        <p>
+        <button class= "yes reset-confirm">
+        Yes
+        </button>
+        <button class= "no reset-confirm">
+        No
+        </button>
+        </p>
+        `
+
+        document.querySelector('.yes').addEventListener('click',()=>{
+            resetScore();
+            hideConfirmation();
+        });
+
+        document.querySelector('.no').addEventListener('click',()=>{
+            hideConfirmation();
+        }); 
     
+    }
+
+    function hideConfirmation(){
+        document.querySelector('.reset-confirmation').innerHTML = '';
+    }
    
