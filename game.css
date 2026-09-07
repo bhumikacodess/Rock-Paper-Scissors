@@ -8,9 +8,11 @@ body{
     font-size: 50px;
     font-weight: bold;
 }
+
 .move-icon{
     height: 100px;
 }
+
 .move-button{
     background-color: transparent;
     border: none;
@@ -22,7 +24,9 @@ body{
     cursor: pointer;
     margin-bottom: 20px;
 }
+
 .moves{
+
     font-size: 36px;
 }
 .display-result{
@@ -33,12 +37,9 @@ body{
 .show-score{
     font-size: 24px;
 }
-.reset-button, .auto-play-button, .reset-confirm{
+.reset-button{
     padding: 10px;
     font-size:18px;
     cursor: pointer;
     border: none;
-    margin-right: 10px;
 }
-this is how it looks right now i dont want to mess it up also i think the clors dont match
-the emojis are yellow the(rock,paper,scissors) signs and the color is white while the background is purple
